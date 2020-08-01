@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
-import 'package:whats_up_doc/Screens/MainPage.dart';
+import 'package:whats_up_doc/Screens/LoginPage.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -8,12 +8,13 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  
   void _terminateSplashScreen() async {
     await Future.delayed(Duration(seconds: 5), () {});
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
         builder: (BuildContext context) {
-          return MainPage();
+          return LoginPage();
         },
       ),
     );

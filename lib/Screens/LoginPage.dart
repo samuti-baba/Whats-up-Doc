@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class MainPage extends StatelessWidget {
+class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(child: Center(child: Text('Main Page Goes Here !'))),
+      body: Container(child: Center(child: Text('Login Page Goes Here !'))),
     );
   }
 }
